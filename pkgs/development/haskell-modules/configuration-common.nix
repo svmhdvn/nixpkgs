@@ -1150,9 +1150,6 @@ self: super: {
   # https://github.com/kazu-yamamoto/dns/issues/150
   dns = dontCheck super.dns;
 
-  # Support recent versions of fast-logger.
-  spacecookie = doJailbreak super.spacecookie;
-
   # apply patches from https://github.com/snapframework/snap-server/pull/126
   # manually until they are accepted upstream
   snap-server = overrideCabal super.snap-server (drv: {
