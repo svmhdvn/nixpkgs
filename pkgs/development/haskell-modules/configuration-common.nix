@@ -1220,9 +1220,6 @@ self: super: {
   # gitit is unbroken in the latest release
   gitit = markUnbroken super.gitit;
 
-  # haskell-ci-0.8 needs cabal-install-parsers ==0.1, but we have 0.2.
-  haskell-ci = doJailbreak super.haskell-ci;
-
   # Test suite requires database
   persistent-mysql = dontCheck super.persistent-mysql;
   persistent-postgresql = dontCheck super.persistent-postgresql;
