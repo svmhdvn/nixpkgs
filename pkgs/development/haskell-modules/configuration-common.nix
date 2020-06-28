@@ -722,9 +722,6 @@ self: super: {
   # The tests spuriously fail
   libmpd = dontCheck super.libmpd;
 
-  # https://github.com/dan-t/cabal-lenses/issues/6
-  cabal-lenses = doJailbreak super.cabal-lenses;
-
   # https://github.com/diagrams/diagrams-lib/issues/288
   diagrams-lib = overrideCabal super.diagrams-lib (drv: { doCheck = !pkgs.stdenv.isi686; });
 
