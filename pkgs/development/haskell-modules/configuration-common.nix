@@ -964,9 +964,6 @@ self: super: {
     sha256 = "056rk58v9h114mjx62f41x971xn9p3nhsazcf9zrcyxh1ymrdm8j";
   });
 
-  # needed because of testing-feat >=0.4.0.2 && <1.1
-  language-ecmascript = doJailbreak super.language-ecmascript;
-
   # sexpr is old, broken and has no issue-tracker. Let's fix it the best we can.
   sexpr =
     appendPatch (overrideCabal super.sexpr (drv: {
