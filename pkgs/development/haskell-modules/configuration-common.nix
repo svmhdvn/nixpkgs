@@ -888,8 +888,6 @@ self: super: {
     '';
   });
 
-  # https://github.com/haskell-hvr/resolv/pull/6
-  resolv = dontCheck super.resolv;
   resolv_0_1_1_2 = dontCheck super.resolv_0_1_1_2;
 
   # spdx 0.2.2.0 needs older tasty
