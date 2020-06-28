@@ -1102,9 +1102,6 @@ self: super: {
   # upstream issue: https://github.com/vmchale/atspkg/issues/12
   language-ats = dontCheck super.language-ats;
 
-  # https://github.com/Happstack/web-routes-th/pull/3
-  web-routes-th = doJailbreak super.web-routes-th;
-
   # Remove for hail > 0.2.0.0
   hail = overrideCabal super.hail (drv: {
     patches = [
