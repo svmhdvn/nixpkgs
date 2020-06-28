@@ -917,9 +917,6 @@ self: super: {
   # Work around overspecified constraint on github ==0.18.
   github-backup = doJailbreak super.github-backup;
 
-  # Test suite depends on old QuickCheck 2.10.x.
-  cassava = dontCheck super.cassava;
-
   # Test suite depends on cabal-install
   doctest = dontCheck super.doctest;
 
