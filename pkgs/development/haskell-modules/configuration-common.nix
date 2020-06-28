@@ -900,11 +900,6 @@ self: super: {
   # Compiles some C++ source which requires these headers
   VulkanMemoryAllocator = addExtraLibrary super.VulkanMemoryAllocator pkgs.vulkan-headers;
 
-  # # Builds only with the latest version of indexed-list-literals.
-  # vector-sized_1_0_3_0 = super.vector-sized_1_0_3_0.override {
-  #   indexed-list-literals = self.indexed-list-literals_0_2_1_1;
-  # };
-
   # https://github.com/dmwit/encoding/pull/3
   encoding = doJailbreak (appendPatch super.encoding ./patches/encoding-Cabal-2.0.patch);
 
@@ -916,9 +911,6 @@ self: super: {
 
   # https://github.com/haskell-servant/servant-auth/issues/113
   servant-auth-client = dontCheck super.servant-auth-client;
-
-  # Test has either build errors or fails anyway, depending on the compiler.
-  vector-algorithms = dontCheck super.vector-algorithms;
 
   # 2020-06-04: HACK: dontCheck - The test suite attempts to use the network.
   # Should be solved when: https://github.com/dhall-lang/dhall-haskell/issues/1837
