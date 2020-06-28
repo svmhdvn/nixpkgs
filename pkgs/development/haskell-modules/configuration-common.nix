@@ -1171,9 +1171,6 @@ self: super: {
   # https://github.com/haskell-servant/servant-ekg/issues/15
   servant-ekg = doJailbreak super.servant-ekg;
 
-  # krank-0.1.0 does not accept PyF-0.9.0.0.
-  krank = doJailbreak super.krank;
-
   # the test suite has an overly tight restriction on doctest
   # See https://github.com/ekmett/perhaps/pull/5
   perhaps = doJailbreak super.perhaps;
