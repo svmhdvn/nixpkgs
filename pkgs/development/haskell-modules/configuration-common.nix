@@ -888,9 +888,6 @@ self: super: {
     '';
   });
 
-  # https://github.com/strake/lenz-template.hs/pull/2
-  lenz-template = doJailbreak super.lenz-template;
-
   # https://github.com/haskell-hvr/resolv/pull/6
   resolv = dontCheck super.resolv;
   resolv_0_1_1_2 = dontCheck super.resolv_0_1_1_2;
