@@ -888,9 +888,6 @@ self: super: {
     '';
   });
 
-  # https://github.com/GaloisInc/pure-zlib/pull/11
-  pure-zlib = doJailbreak super.pure-zlib;
-
   # https://github.com/strake/lenz-template.hs/pull/2
   lenz-template = doJailbreak super.lenz-template;
 
