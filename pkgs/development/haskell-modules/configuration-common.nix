@@ -843,9 +843,6 @@ self: super: {
   # requires a release including https://github.com/haskell-servant/servant-swagger/commit/249530d9f85fe76dfb18b100542f75a27e6a3079
   servant-swagger = dontCheck super.servant-swagger;
 
-  # Tries to read a file it is not allowed to in the test suite
-  load-env = dontCheck super.load-env;
-
   # Copy hledger man pages from data directory into the proper place. This code
   # should be moved into the cabal2nix generator.
   hledger = overrideCabal super.hledger (drv: {
