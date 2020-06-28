@@ -888,10 +888,6 @@ self: super: {
     '';
   });
 
-  # https://github.com/haskell-rewriting/term-rewriting/pull/15
-  # remove on next hackage update
-  term-rewriting = doJailbreak super.term-rewriting;
-
   # https://github.com/GaloisInc/pure-zlib/pull/11
   pure-zlib = doJailbreak super.pure-zlib;
 
