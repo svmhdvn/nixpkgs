@@ -61,7 +61,6 @@ self: super: {
   haddock-library = self.haddock-library_1_9_0;
 
   # Jailbreak to fix the build.
-  async = doJailbreak super.async;
   base-noprelude = doJailbreak super.base-noprelude;
   ChasingBottoms = doJailbreak super.ChasingBottoms;
   ed25519 = doJailbreak super.ed25519;
