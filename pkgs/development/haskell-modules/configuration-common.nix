@@ -745,9 +745,6 @@ self: super: {
   digestive-functors-blaze = doJailbreak super.digestive-functors-blaze;
   digestive-functors = doJailbreak super.digestive-functors;
 
-  # missing dependencies: doctest ==0.12.*
-  html-entities = doJailbreak super.html-entities;
-
   # https://github.com/takano-akio/filelock/issues/5
   filelock = dontCheck super.filelock;
 
