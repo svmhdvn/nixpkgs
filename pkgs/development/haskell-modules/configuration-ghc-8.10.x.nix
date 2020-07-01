@@ -81,7 +81,6 @@ self: super: {
 
   # Jailbreak to fix the build.
   brick = doJailbreak super.brick;
-  cabal-plan = doJailbreak super.cabal-plan;
   cborg = doJailbreak super.cborg;
   cborg-json = doJailbreak super.cborg-json;
   exact-pi = doJailbreak super.exact-pi;
