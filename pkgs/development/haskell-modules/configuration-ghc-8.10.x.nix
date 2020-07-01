@@ -82,7 +82,6 @@ self: super: {
   # Jailbreak to fix the build.
   brick = doJailbreak super.brick;
   exact-pi = doJailbreak super.exact-pi;
-  shellmet = doJailbreak super.shellmet;
 
   # The shipped Setup.hs file is broken.
   csv = overrideCabal super.csv (drv: { preCompileBuildDriver = "rm Setup.hs"; });
