@@ -64,7 +64,6 @@ self: super: {
   pandoc = doJailbreak super.pandoc;
   system-fileio = doJailbreak super.system-fileio;
   unliftio-core = doJailbreak super.unliftio-core;
-  zlib = doJailbreak super.zlib;
 
   # Use the latest version to fix the build.
   lens = self.lens_4_19_2;
