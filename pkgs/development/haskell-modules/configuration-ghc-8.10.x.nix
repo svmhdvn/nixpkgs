@@ -80,7 +80,6 @@ self: super: {
   ghc-lib-parser-ex = super.ghc-lib-parser-ex.override { ghc-lib-parser = null; };
 
   # Jailbreak to fix the build.
-  aeson-diff = doJailbreak super.aeson-diff;
   brick = doJailbreak super.brick;
   cabal-plan = doJailbreak super.cabal-plan;
   cborg = doJailbreak super.cborg;
