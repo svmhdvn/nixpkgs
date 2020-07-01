@@ -62,7 +62,6 @@ self: super: {
 
   # Jailbreak to fix the build.
   pandoc = doJailbreak super.pandoc;
-  regex-base = doJailbreak super.regex-base;
   regex-compat = doJailbreak super.regex-compat;
   regex-pcre-builtin = doJailbreak super.regex-pcre-builtin;
   regex-posix = doJailbreak super.regex-posix;
