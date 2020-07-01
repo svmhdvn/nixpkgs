@@ -62,7 +62,6 @@ self: super: {
 
   # Jailbreak to fix the build.
   pandoc = doJailbreak super.pandoc;
-  regex-posix = doJailbreak super.regex-posix;
   regex-tdfa = doJailbreak super.regex-tdfa;
   split = doJailbreak super.split;
   system-fileio = doJailbreak super.system-fileio;
