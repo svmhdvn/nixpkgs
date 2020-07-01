@@ -61,7 +61,6 @@ self: super: {
   haddock-library = self.haddock-library_1_9_0;
 
   # Jailbreak to fix the build.
-  email-validate = doJailbreak super.email-validate;  # https://github.com/Porges/email-validate-hs/issues/51
   feed = doJailbreak super.feed;  # https://github.com/bergmark/feed/issues/48
   hashable = doJailbreak super.hashable;
   pandoc = doJailbreak super.pandoc;
