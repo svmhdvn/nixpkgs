@@ -82,7 +82,6 @@ self: super: {
   # Jailbreak to fix the build.
   brick = doJailbreak super.brick;
   exact-pi = doJailbreak super.exact-pi;
-  relude = dontCheck (doJailbreak super.relude);
   serialise = doJailbreak super.serialise;
   setlocale = doJailbreak super.setlocale;
   shellmet = doJailbreak super.shellmet;
