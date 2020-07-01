@@ -62,7 +62,6 @@ self: super: {
 
   # Jailbreak to fix the build.
   pandoc = doJailbreak super.pandoc;
-  split = doJailbreak super.split;
   system-fileio = doJailbreak super.system-fileio;
   tar = doJailbreak super.tar;
   tasty-expected-failure = doJailbreak super.tasty-expected-failure;
