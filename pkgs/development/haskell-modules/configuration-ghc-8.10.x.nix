@@ -61,7 +61,6 @@ self: super: {
   haddock-library = self.haddock-library_1_9_0;
 
   # Jailbreak to fix the build.
-  hashable = doJailbreak super.hashable;
   pandoc = doJailbreak super.pandoc;
   parallel = doJailbreak super.parallel;
   regex-base = doJailbreak super.regex-base;
